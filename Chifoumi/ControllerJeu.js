@@ -38,7 +38,7 @@ function playRound(playerChoice) {
 
 function ChangerJoueur() {
     var url = new URL(window.location.href)
-    window.location.href = "joueur.html"
+    window.location.href = "index.html"
 }
 
 
