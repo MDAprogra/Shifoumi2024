@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>SHIFOUMI - Jouer</title>
+<!--    logo page-->
+    <link rel="icon" type="image/png" href="chifoumipng.png">
+    <script src="ControllerJeu.js"></script>
+    <link rel="stylesheet" href="StyleJeu.css">
+</head>
+<header>
+     <div class="InfoJoueur">
+        <label id="AffNomJoueur"></label>
+        <label id="AffScore"></label>
+    </div>
+</header>
+<body>
+<h1>Choufoumi !</h1>
+<div class="choix">
+    <button id="pierre" onclick="playRound('pierre')">Pierre</button>
+    <button id="feuille" onclick="playRound('feuille')">Feuille</button>
+    <button id="ciseaux" onclick="playRound('ciseaux')">Ciseaux</button>
+</div>
+<div id="affichagechoix"></div>
+<div id="resultat"></div>
+
+<div class="BackToJoueur">
+    <button onclick="ChangerJoueur()">Changer de joueur</button>
+</div>
+</body>
+
+<footer>
+    <div class="footer">
+        <p>© 2024 - SHIFOUMI - Matthias DAUVEL - MediaSchool IRIS Rouen</p>
+    </div>
+</footer>
+<script>
+    AffichageJoueur();
+</script>
+</html>
